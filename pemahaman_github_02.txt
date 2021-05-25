@@ -1,0 +1,13 @@
+1. melakukan git init di direktori project yang dibuat
+`git init`
+2. menambahkan semua file untuk di commit
+`git add .`
+3. melakukan commit untuk pertama kalinya dan tambahkan comment, 
+`git commit -m "first commit"
+4. membuat branch main
+`git branch -M main`
+5. menambahkan remote add origin
+`git remote add origin https://github.com/aldyHelix/ide_entry_test.git`
+6. melakukan push menggunakan main branch
+`git push -u origin main`
+7. selesai
