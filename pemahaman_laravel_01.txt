@@ -1,0 +1,4 @@
+file .env digunakan untuk membuat variabel sebelum memasuki config file
+karena .env bersifat credentials maka variabel password tidak secara explisit ditulis didalam config file
+
+sedangkan direktori config digunakan untuk menempatakan variabel konfigurasi pada applikasi yang akan dibuat

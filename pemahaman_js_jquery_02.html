@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title>Document IDE Test Entry</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<p id="fetch-status">Not Fetch</p>
+	<input type='button' id='fetch' value='Fetch'><br/>
+	<div class='response'></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fetch").click(function(){
+				$.ajax({
+					url: 'https://test-ujian-masuk.infraedukasi.com',
+					type: 'get',
+					beforeSend: function(){
+						$("#loader").show();
+						i = 0;
+						setInterval(function() {
+							i = ++i % 4;
+							$("#fetch-status").html("Fetching "+Array(i+1).join("."));
+						}, 500);
+					},
+					success: function(){
+						clearInterval();
+						$('#fetch-status').text('Fetched Success');
+					},
+					error: function(){
+						clearInterval();
+						$('#fetch-status').text('Fetching Failed');
+					},
+					complete:function(data){
+						clearInterval();
+						$('#fetch-status').text('Fetching Complete');
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

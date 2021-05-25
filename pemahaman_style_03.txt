@@ -1,0 +1,4 @@
+tidak ada atau tidak valid
+
+seharusnya untuk membuat sebuah selector inheritance menggunakan elemet kemudian selector
+karena terdapat object lagi didalam selector maka syntax terbaca terdapat syntax lain dan menyebabkan error

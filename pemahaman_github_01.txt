@@ -1,0 +1,5 @@
+1. buka repository https://github.com/aldyHelix/ide_entry_test
+2. copy http dari link clone tersebut
+3. buat direktori untuk clone dari git
+4. buka terminal untuk melakukan clone  dengan command git clone https://github.com/aldyHelix/ide_entry_test.git
+5. tunggu hingga selesai

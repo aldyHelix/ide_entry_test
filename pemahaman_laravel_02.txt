@@ -1,0 +1,2 @@
+pada .env untuk membuat credential database dan pada config database untuk menambahkan konfigurasinya
+(database yang digunakan sama)
